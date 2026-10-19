@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectando con Radar...</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loader {
+            border: 4px solid #333;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>Obteniendo enlace actualizado...</p>
+
+    <script>
+        // El enlace directo a tu archivo TXT en Dropbox
+        const dropboxUrl = "https://dl.dropboxusercontent.com/scl/fi/5fp1zu8dkannhw6902kto/url_radar.txt?rlkey=bz6leiavl4b69gkcgp85n730a&st=erpwv1sx";
+
+        async function redirigir() {
+            try {
+                // Agregamos un parámetro de tiempo (?t=...) para evitar que el navegador guarde en caché el texto viejo
+                const respuesta = await fetch(dropboxUrl + "&t=" + new Date().getTime());
+                const urlCloudflare = (await respuesta.text()).trim();
+
+                if (urlCloudflare.startsWith("http")) {
+                    // Redirige de inmediato a la web de Cloudflare actual
+                    window.location.replace(urlCloudflare);
+                } else {
+                    document.body.innerHTML = "<h3>Error: El archivo de texto no contiene una URL válida.</h3>";
+                }
+            } catch (error) {
+                document.body.innerHTML = "<h3>Error de conexión al buscar el servidor.</h3><p>Revisa tu conexión a internet.</p>";
+            }
+        }
+
+        redirigir();
+    </script>
+</body>
+</html>
