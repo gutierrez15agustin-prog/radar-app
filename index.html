@@ -36,13 +36,12 @@
     <p>Obteniendo enlace actualizado...</p>
 
     <script>
-        // El enlace directo a tu archivo TXT en Dropbox
-        const dropboxUrl = "https://dl.dropboxusercontent.com/scl/fi/5fp1zu8dkannhw6902kto/url_radar.txt?rlkey=bz6leiavl4b69gkcgp85n730a&st=erpwv1sx";
-
+        // Busca el archivo en la misma ruta que el index.html
+        const urlArchivo = "url_radar.txt"; 
+        
         async function redirigir() {
             try {
-                // Agregamos un parámetro de tiempo (?t=...) para evitar que el navegador guarde en caché el texto viejo
-                const respuesta = await fetch(dropboxUrl + "&t=" + new Date().getTime());
+                const respuesta = await fetch(urlArchivo + "?t=" + new Date().getTime());
                 const urlCloudflare = (await respuesta.text()).trim();
 
                 if (urlCloudflare.startsWith("http")) {
