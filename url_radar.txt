@@ -1,1 +1,1 @@
-https://bunch-this-guarantees-within.trycloudflare.com
+https://api.trycloudflare.com
