@@ -1,1 +1,1 @@
-https://expand-innovations-welding-shopping.trycloudflare.com
+https://api.trycloudflare.com
