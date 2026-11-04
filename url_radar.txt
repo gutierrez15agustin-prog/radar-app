@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://instances-alpha-cnet-latex.trycloudflare.com
