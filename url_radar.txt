@@ -1,1 +1,1 @@
-https://specify-antiques-knowledgestorm-temp.trycloudflare.com
+https://api.trycloudflare.com
