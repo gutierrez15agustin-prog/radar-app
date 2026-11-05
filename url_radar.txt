@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://salaries-lady-announce-ride.trycloudflare.com
