@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://concert-victory-dicke-queries.trycloudflare.com
