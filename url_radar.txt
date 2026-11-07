@@ -1,1 +1,1 @@
-https://subscriber-select-steal-rail.trycloudflare.com
+https://api.trycloudflare.com
