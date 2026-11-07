@@ -1,1 +1,1 @@
-https://beverages-test-pleasant-qty.trycloudflare.com
+https://api.trycloudflare.com
