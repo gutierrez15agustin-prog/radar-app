@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://deaths-columbus-profits-labs.trycloudflare.com
