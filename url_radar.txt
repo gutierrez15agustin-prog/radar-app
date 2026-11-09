@@ -1,1 +1,1 @@
-https://ham-down-boats-wanna.trycloudflare.com
+https://api.trycloudflare.com
