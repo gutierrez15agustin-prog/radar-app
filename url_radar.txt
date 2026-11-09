@@ -1,1 +1,1 @@
-https://marion-format-share-easter.trycloudflare.com
+https://api.trycloudflare.com
