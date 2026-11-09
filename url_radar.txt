@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://armor-partition-combining-addressed.trycloudflare.com
