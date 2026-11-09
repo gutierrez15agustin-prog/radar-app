@@ -1,1 +1,1 @@
-https://pens-similarly-independent-wide.trycloudflare.com
+https://api.trycloudflare.com
