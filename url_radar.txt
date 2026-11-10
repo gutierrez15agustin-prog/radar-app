@@ -1,1 +1,1 @@
-https://sep-nearest-nil-lectures.trycloudflare.com
+https://api.trycloudflare.com
