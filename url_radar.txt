@@ -1,1 +1,1 @@
-https://announces-hispanic-yeast-odds.trycloudflare.com
+https://api.trycloudflare.com
