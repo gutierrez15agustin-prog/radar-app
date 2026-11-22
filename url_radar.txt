@@ -1,1 +1,1 @@
-https://ones-valves-lawyers-widescreen.trycloudflare.com
+https://api.trycloudflare.com
