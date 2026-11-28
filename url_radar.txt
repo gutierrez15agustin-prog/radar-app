@@ -1,1 +1,1 @@
-https://miscellaneous-airplane-notre-readily.trycloudflare.com
+https://api.trycloudflare.com
